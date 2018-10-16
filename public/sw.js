@@ -24,6 +24,8 @@ var offlineFundamentals = [
     'https://unpkg.com/leaflet@1.3.4/dist/leaflet.js',
     'project2/map.css',
     'project2/map.js',
+    'project3/peta.css',
+    'project3/peta.js',
 ];
 
 /* The install event fires when the service worker is first installed.

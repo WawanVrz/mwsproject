@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>.:: Google MWS Bali 2018 | Favourite Place Using LeafLet Mapbox ::.</title>
+    <link rel="icon" href="../images/icongogledev.png">
+    <link rel="stylesheet" type="text/css" href="peta.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"/>
+</head>
+<body>
+        <div class="header">
+                <h2>Favourite Place Using LeafLet Mapbox</h2>
+                <p class="breadcrumbtitle"><a href="../index.html" style="color:#fff; text-decoration:none;">Home</a> › Leaflet Mapbox</p>
+            </div>
+    <div class='container'>
+        <div class='peta' id='mapid'></div>
+        <div class='gambar' id='gmb'></div>
+        <div class='review' id='review'> </div>
+    </div>
+</body>
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+<script>
+    let mymap = L.map('mapid').setView([-8.670973, 115.233879], 11);
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 20, 
+        id: 'mapbox.streets', 
+        accessToken: 'sk.eyJ1Ijoid2F3YW5yYWhtYXdhbiIsImEiOiJjam0wYmkwb2IyNHExM3FsZGY0aWlzamd1In0.2NxWKwk1V15gi7qS9Ykg8Q'}).addTo(mymap);
+</script>
+<script src="peta.js"></script>
+</html>
