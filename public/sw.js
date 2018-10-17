@@ -25,7 +25,7 @@ var offlineFundamentals = [
     'project2/map.css',
     'project2/map.js',
     'project3/peta.css',
-    'project3/peta.js',
+    'project4/peta.js',
 ];
 
 /* The install event fires when the service worker is first installed.
